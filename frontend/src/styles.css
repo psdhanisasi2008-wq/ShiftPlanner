@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Segoe UI, Arial, sans-serif; background: #f4f6f8; color: #1f2933; }
+.app { max-width: 1100px; margin: 0 auto; padding: 16px; }
+header { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding-bottom: 12px; border-bottom: 1px solid #d5dae0; }
+h1 { margin: 0; font-size: 22px; }
+h2 { margin: 20px 0 10px; font-size: 18px; }
+nav { display: flex; gap: 6px; flex: 1; }
+.tab { background: #e4e8ec; color: #1f2933; }
+.tab.active { background: #1d4ed8; color: #fff; }
+.acting { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+button { border: 0; border-radius: 4px; padding: 8px 14px; background: #1d4ed8; color: #fff; cursor: pointer; font-size: 14px; }
+button.secondary { background: #6b7280; }
+button.danger { background: #b91c1c; }
+button.small { padding: 4px 10px; font-size: 13px; }
+input, select { padding: 7px; border: 1px solid #c4cad2; border-radius: 4px; font-size: 14px; background: #fff; }
+label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+label.check { flex-direction: row; align-items: center; gap: 6px; }
+.card { background: #fff; border: 1px solid #d5dae0; border-radius: 6px; padding: 12px; margin-bottom: 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; align-items: end; }
+.row { display: flex; gap: 6px; align-items: center; }
+.scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #d5dae0; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e8ec; font-size: 14px; }
+th { background: #eef1f4; }
+.notice { padding: 10px 12px; border-radius: 4px; margin: 10px 0; font-size: 14px; }
+.notice.ok { background: #dcfce7; color: #14532d; }
+.notice.error { background: #fee2e2; color: #7f1d1d; }
+.hint { color: #52606d; font-size: 13px; }
+.badge { padding: 2px 8px; border-radius: 10px; font-size: 12px; background: #e4e8ec; }
+.badge.COMPLETED { background: #dcfce7; color: #14532d; }
+.badge.COLLEAGUE_ACCEPTED { background: #dbeafe; color: #1e3a8a; }
+.badge.PENDING_COLLEAGUE { background: #fef9c3; color: #713f12; }
+.badge.COLLEAGUE_DECLINED, .badge.MANAGER_REJECTED { background: #fee2e2; color: #7f1d1d; }
